@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 key=os.environ['BRAINSHOP']
-chatbotsetup(159615,key)  
+chatbotsetup(163611,key)  
  
 import discord
 import random
@@ -14,9 +14,8 @@ from discord.utils import get
 from discord.ext import commands, tasks
 
 bot_channel=[
-    888321952396230727,
     923867264648884284,
-    881169094454419496
+    940870376420962365
 ]
 
 intents = discord.Intents.default() 
@@ -25,12 +24,12 @@ intents = intents.all()
 
 client=commands.Bot(command_prefix="`", intents=intents)
 client.remove_command('help')
-status=['Instagram','Facebook','Reddit',"twitter"]
+status=['Songs','Web Series','Instagram',"Movies"]
 
 @client.event
 async def on_ready():
   change_status.start()
-  print("we have logged in as {0.user}".format(client))
+  #print("we have logged in as {0.user}".format(client))
 
 @client.event
 async def on_message(message):
