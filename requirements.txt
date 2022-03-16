@@ -7,7 +7,6 @@ ChatbotAPI==1.4.0
 discord.ext.context==0.1.8
 discord.py==1.7.3
 idna==3.3
-multidict==5.2.0
 pyjokes==0.6.0
 python-dotenv==0.19.2
 requests==2.27.1
