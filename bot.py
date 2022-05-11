@@ -14,7 +14,8 @@ from discord.utils import get
 from discord.ext import commands, tasks
 
 bot_channel=[
-    953615954447843368
+    953615954447843368,
+    888321952396230727
 ]
 
 intents = discord.Intents.default() 
